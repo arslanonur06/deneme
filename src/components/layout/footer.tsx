@@ -22,7 +22,7 @@ export function Footer() {
         </div>
       </div>
       <div className="mx-auto max-w-6xl px-4 pb-12 sm:px-6">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-10 sm:grid-cols-2">
           <div>
             <p className="text-sm font-semibold text-foreground">
               {siteConfig.name}
@@ -60,20 +60,6 @@ export function Footer() {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
-            <p className="text-sm font-semibold text-foreground">Açıklamalar</p>
-            <p className="mt-2 text-sm leading-relaxed text-zinc-600">
-              Bu site eğitim amaçlı içerik yayımlar. Şu an{" "}
-              <strong className="font-medium text-foreground">
-                Suratbet
-              </strong>
-              ’i bir ortak bağlantı ile (
-              {siteConfig.partner.affiliateUrl}) öne çıkarıyoruz; bu bağlantı
-              bize komisyon kazandırabilir. Kampanyalar bölgeye göre değişir;
-              oynamadan önce Suratbet’in resmi sayfalarında lisans ve güncel
-              şartları mutlaka doğrulayın.
-            </p>
           </div>
         </div>
         <div className="mt-10 rounded-lg border border-amber-200/80 bg-amber-50/80 p-4 text-sm text-amber-950">

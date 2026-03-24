@@ -11,4 +11,11 @@ export const siteConfig = {
     name: "Suratbet",
     affiliateUrl: "https://t2m.io/srtjlbn",
   },
+  /** Markalar (özellikle arama ile gelenler) için PR / iş birliği iletişimi */
+  brandPr: {
+    line:
+      "Google aramasıyla gelen markalar: PR anlaşması ve iş birliği için bize ulaşın.",
+    ctaLabel: "Telegram",
+    href: "https://t.me/jelibonmarketing",
+  },
 } as const;

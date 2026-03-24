@@ -18,8 +18,27 @@ const links = [
 
 export function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-blue-200/50 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:px-6">
+    <header className="sticky top-0 z-50">
+      <div className="border-b border-blue-200/60 bg-linear-to-r from-sky-50 via-white to-sky-50">
+        <p className="mx-auto max-w-6xl px-4 py-2 text-center text-[11px] leading-snug text-zinc-600 sm:px-6 sm:text-xs">
+          <span className="hidden sm:inline">
+            {siteConfig.brandPr.line}{" "}
+          </span>
+          <span className="sm:hidden">
+            Markalar: PR / iş birliği →{" "}
+          </span>
+          <a
+            href={siteConfig.brandPr.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-blue-800 underline decoration-blue-300 underline-offset-2 hover:text-blue-900"
+          >
+            {siteConfig.brandPr.ctaLabel}
+          </a>
+        </p>
+      </div>
+      <div className="border-b border-blue-200/50 bg-white/90 backdrop-blur-md">
+        <div className="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-3 sm:px-6">
         <div className="flex flex-wrap items-center justify-between gap-4">
           <Link
             href="/"
@@ -41,6 +60,14 @@ export function Navbar() {
                 {l.label}
               </Link>
             ))}
+            <a
+              href={siteConfig.brandPr.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-colors hover:text-blue-800"
+            >
+              {siteConfig.brandPr.ctaLabel}
+            </a>
             <Suspense
               fallback={
                 <a
@@ -67,6 +94,7 @@ export function Navbar() {
           <Suspense fallback={<SuratbetActionButtonsFallback variant="compact" />}>
             <SuratbetActionButtons variant="compact" />
           </Suspense>
+        </div>
         </div>
       </div>
     </header>
