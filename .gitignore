@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# nested duplicate project (keep repo single-root)
+/deneme/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

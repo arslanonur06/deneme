@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "prebuild": "node scripts/check-no-merge-conflicts.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . && node scripts/check-no-merge-conflicts.mjs"
   },
   "dependencies": {
     "next": "16.2.0",
