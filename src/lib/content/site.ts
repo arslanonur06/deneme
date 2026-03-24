@@ -1,9 +1,14 @@
 export const siteConfig = {
-  name: "PlayWise Insights",
-  tagline: "Research-backed guides for informed iGaming decisions.",
+  name: "Suratbet Rehberi",
+  tagline:
+    "Slot ve masa oyunları hakkında bağımsız rehberler; bir işletmeyi ziyaret etmeye hazır olduğunuzda ortağımız Suratbet'i öne çıkarıyoruz.",
   description:
-    "Independent educational content about casino games, strategy fundamentals, and how to compare licensed platforms responsibly.",
+    "Slotlar, temel strateji ve platform karşılaştırması üzerine eğitici içerik. Suratbet’e ortaklık bağlantısıyla yönlendiriyoruz; güncel kampanyalar, kurallar ve lisans durumunu mutlaka kendi ülkeniz/bölgeniz için resmi siteden doğrulayın.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  locale: "en_US",
-  twitterHandle: "@playwiseinsights",
+  locale: "tr_TR",
+  twitterHandle: "",
+  partner: {
+    name: "Suratbet",
+    affiliateUrl: "https://t2m.io/srtjlbn",
+  },
 } as const;
