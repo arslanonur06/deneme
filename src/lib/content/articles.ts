@@ -219,7 +219,7 @@ export const articles: Article[] = [
       {
         question: "Ortaklık bağlantıları sıralamalarımızı değiştirir mi?",
         answer:
-          "Ticari ilişkiler olabilir; yine de listeler araştırma için kullanılabilir kalmalıdır. Bölgenizde lisansını doğrulayabileğiniz ve şartlarını anlayabileceğiniz işletmelere öncelik verin.",
+          "Ticari ilişkiler olabilir; yine de listeler araştırma için kullanılabilir kalmalıdır. Bölgenizde lisansını doğrulayabileceğiniz ve şartlarını anlayabileceğiniz işletmelere öncelik verin.",
       },
     ],
   },
@@ -243,68 +243,34 @@ export const articles: Article[] = [
     sections: [
       {
         id: "wild-symbols",
-<<<<<<< HEAD
-        heading: "Wild symbols: substitution and limits",
-        level: 2,
-        paragraphs: [
-          "Wilds typically substitute for standard symbols to complete winning combinations. Whether wilds pay on their own and appear on all reels varies by game.",
-          "Always open the in-game paytable: it states which symbols wilds can replace and whether jackpots are excluded when wilds are involved.",
-=======
         heading: "Wild semboller: yerine geçme ve sınırlar",
         level: 2,
         paragraphs: [
           "Wild’lar tipik olarak standart sembollerin yerine geçerek kazanan kombinasyonları tamamlar. Wild’ların kendi başına ödeme yapıp yapmadığı ve tüm makaralarda bulunup bulunmadığı oyuna göre değişir.",
           "Her zaman oyun içi ödeme tablosunu açın: wild’ların hangi sembollerin yerine geçebileceğini ve jackpot’ların wild ile dışlanıp dışlanmadığını yazar.",
->>>>>>> bea6d37b6e9fb7b1663c57625300d58f176cfad9
         ],
       },
       {
         id: "scatters-and-triggers",
-<<<<<<< HEAD
-        heading: "Scatters and feature triggers",
-        level: 2,
-        paragraphs: [
-          "Scatters often pay anywhere on the grid and can unlock free spins or bonus rounds when enough land in a single spin.",
-          "Some titles use alternate triggers (collection meters, random features). The real paytable is the source of truth—assumptions from other games are misleading.",
-=======
         heading: "Scatter’lar ve özellik tetikleri",
         level: 2,
         paragraphs: [
           "Scatter’lar genelde ızgarada herhangi bir yerde ödeme yapabilir ve tek çevirmede yeteri kadar düştüğünde ücretsiz çevirme veya bonus turlarını açabilir.",
           "Bazı başlıklar alternatif tetikler kullanır (toplama çubukları, rastgele özellikler). Kaynak gerçek ödeme tablosudur—başka oyunlardan varsayımlar yanıltıcıdır.",
->>>>>>> bea6d37b6e9fb7b1663c57625300d58f176cfad9
         ],
       },
       {
         id: "bonus-rounds-variance",
-<<<<<<< HEAD
-        heading: "Bonus rounds and volatility swings",
-        level: 2,
-        paragraphs: [
-          "Feature rounds can concentrate much of a game’s payout potential in rare events. That can make base play feel calm and bonuses feel explosive.",
-          "If you want calmer sessions, look for games marketed as low volatility—or try demo modes where permitted in your region.",
-=======
         heading: "Bonus turları ve volatilite sıçramaları",
         level: 2,
         paragraphs: [
           "Özellik turları, oyunun ödeme potansiyelinin büyük bir kısmını nadir olaylarda yoğunlaştırabilir. Bu da temel oyunu sakin, bonusları ise patlayıcı hissettirebilir.",
           "Daha sakin oturumlar istiyorsanız düşük volatilite olarak pazarlanan oyunları arayın veya bölgenizde izinliyse—demo modları deneyin.",
->>>>>>> bea6d37b6e9fb7b1663c57625300d58f176cfad9
         ],
       },
     ],
     faq: [
       {
-<<<<<<< HEAD
-        question: "Does bonus buy change RTP?",
-        answer:
-          "In some jurisdictions bonus buy is restricted; where allowed, the paytable or help file should explain how buy works and whether RTP differs by mode. If unsure, ask support or avoid the feature.",
-      },
-      {
-        question: "If features go missing for a long time, is it “due”?",
-        answer:
-          "No. Licensed slots do not use a queue model for outcomes. Streaks are random and can run long in either direction.",
-=======
         question: "Bonus satın alımı RTP’yi değiştirir mi?",
         answer:
           "Bazı yargı bölgelerinde bonus satın alımı kısıtlanır; izin verilen yerlerde ödeme tablosu veya yardım dosyası satın alımın nasıl çalıştığını ve RTP’nin moda göre değişip değişmediğini anlatmalıdır. Emin değilseniz desteğe sorun veya özelliği kullanmayın.",
@@ -313,7 +279,6 @@ export const articles: Article[] = [
         question: "Özellikler uzun süre gelmezse ‘hak edilmiş’ midir?",
         answer:
           "Hayır. Lisanslı slotlarda sonuçlar ‘sıra’ modeliyle işlemez. Seriler rastgele oluşur ve her iki yönde de uzun sürebilir.",
->>>>>>> bea6d37b6e9fb7b1663c57625300d58f176cfad9
       },
     ],
   },
@@ -344,8 +309,4 @@ export function getFeaturedArticles(limit = 3): Article[] {
 
 export function getArticleRecommendedPlatforms(article: Article): Platform[] {
   return pickPlatforms(...article.recommendedPlatformSlugs);
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> bea6d37b6e9fb7b1663c57625300d58f176cfad9
