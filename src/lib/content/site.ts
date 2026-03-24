@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Suratbet Rehberi",
   tagline:
-    "Slot ve masa oyunları hakkında bağımsız rehberler; bir işletmeyi ziyaret etmeye hazır olduğunuzda ortağımız Suratbet'i öne çıkarıyoruz.",
+    "Slot ve masa oyunları için tarafsız rehberler sunuyoruz; oynamaya karar verdiğinizde ortağımız Suratbet’i öne çıkarıyoruz.",
   description:
     "Slotlar, temel strateji ve platform karşılaştırması üzerine eğitici içerik. Suratbet’e ortaklık bağlantısıyla yönlendiriyoruz; güncel kampanyalar, kurallar ve lisans durumunu mutlaka kendi ülkeniz/bölgeniz için resmi siteden doğrulayın.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",

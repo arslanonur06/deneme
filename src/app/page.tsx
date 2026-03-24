@@ -64,9 +64,9 @@ export default function HomePage() {
             <span className="text-blue-900">Suratbet</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
-            {siteConfig.tagline} Temellerden başlayın, yan yana görünüm için
-            karşılaştırma sayfasını kullanın ve kayıpları telafi etme hedefi
-            olmadan sorumlu limitler koruyun.
+            {siteConfig.tagline} İlk adım olarak rehberlere göz atın; platformları
+            yan yana görmek için karşılaştırma sayfasına geçin. Kayıpları telafi
+            etme beklentisi taşımadan, sorumlu oyun sınırlarınıza uyun.
           </p>
           <div className="mt-6 rounded-2xl border border-blue-200/80 bg-sky-50/80 p-4 sm:p-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-800">
