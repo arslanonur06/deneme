@@ -239,4 +239,70 @@ export const articles: Article[] = [
     sections: [
       {
         id: "wild-symbols",
-        heading: "Wild symbols: substit
+        heading: "Wild symbols: substitution and limits",
+        level: 2,
+        paragraphs: [
+          "Wilds typically substitute for standard symbols to complete winning combinations. Whether wilds pay on their own and appear on all reels varies by game.",
+          "Always open the in-game paytable: it states which symbols wilds can replace and whether jackpots are excluded when wilds are involved.",
+        ],
+      },
+      {
+        id: "scatters-and-triggers",
+        heading: "Scatters and feature triggers",
+        level: 2,
+        paragraphs: [
+          "Scatters often pay anywhere on the grid and can unlock free spins or bonus rounds when enough land in a single spin.",
+          "Some titles use alternate triggers (collection meters, random features). The real paytable is the source of truth—assumptions from other games are misleading.",
+        ],
+      },
+      {
+        id: "bonus-rounds-variance",
+        heading: "Bonus rounds and volatility swings",
+        level: 2,
+        paragraphs: [
+          "Feature rounds can concentrate much of a game’s payout potential in rare events. That can make base play feel calm and bonuses feel explosive.",
+          "If you want calmer sessions, look for games marketed as low volatility—or try demo modes where permitted in your region.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "Does bonus buy change RTP?",
+        answer:
+          "In some jurisdictions bonus buy is restricted; where allowed, the paytable or help file should explain how buy works and whether RTP differs by mode. If unsure, ask support or avoid the feature.",
+      },
+      {
+        question: "If features go missing for a long time, is it “due”?",
+        answer:
+          "No. Licensed slots do not use a queue model for outcomes. Streaks are random and can run long in either direction.",
+      },
+    ],
+  },
+];
+
+export function getArticleBySlug(slug: string): Article | undefined {
+  return articles.find((a) => a.slug === slug);
+}
+
+export function getAllArticleSlugs(): string[] {
+  return articles.map((a) => a.slug);
+}
+
+export function getArticlesByCategory(
+  category: Article["category"],
+): Article[] {
+  return articles.filter((a) => a.category === category);
+}
+
+export function getFeaturedArticles(limit = 3): Article[] {
+  return [...articles]
+    .sort(
+      (a, b) =>
+        new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
+    )
+    .slice(0, limit);
+}
+
+export function getArticleRecommendedPlatforms(article: Article): Platform[] {
+  return pickPlatforms(...article.recommendedPlatformSlugs);
+}
