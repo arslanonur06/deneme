@@ -4,6 +4,7 @@ import "./globals.css";
 import { SiteShell } from "@/components/layout/site-shell";
 import { OrganizationJsonLd } from "@/components/seo/json-ld";
 import { siteConfig } from "@/lib/content/site";
+import { Analytics } from "@vercel/analytics/next";
 
 const dmSans = DM_Sans({
   subsets: ["latin", "latin-ext"],
@@ -59,6 +60,7 @@ export default function RootLayout({
           description={siteConfig.description}
         />
         <SiteShell>{children}</SiteShell>
+        <Analytics />
       </body>
     </html>
   );
