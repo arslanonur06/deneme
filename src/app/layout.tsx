@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { SiteShell } from "@/components/layout/site-shell";
@@ -62,6 +63,7 @@ export default function RootLayout({
           description={siteConfig.description}
         />
         <SiteShell>{children}</SiteShell>
+        <Analytics />
       </body>
     </html>
   );
