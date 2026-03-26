@@ -7,6 +7,8 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   locale: "tr_TR",
   twitterHandle: "",
+  /** Google Search Console — HTML etiketi doğrulaması */
+  googleSiteVerification: "5seRghl2xm4Tw4zCPd7CijJ9fc1y-8idrhehFcgqkTs",
   partner: {
     name: "Suratbet",
     affiliateUrl: "https://t2m.io/srtjlbn",
