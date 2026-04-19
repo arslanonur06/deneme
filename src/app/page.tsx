@@ -9,13 +9,13 @@ import { getLatestBlogPosts } from "@/lib/content/blog-posts";
 import { operatorSpotlights } from "@/lib/content/operator-spotlights";
 import { articles, getFeaturedArticles } from "@/lib/content/articles";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "@/components/layout/suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "@/components/layout/robinbet-action-buttons";
 import { siteConfig } from "@/lib/content/site";
 
 export const metadata: Metadata = {
-  title: "Suratbet rehberleri, slot açıklamaları ve platform ipuçları",
+  title: "Robinbet rehberleri, slot açıklamaları ve platform ipuçları",
   description: siteConfig.description,
   alternates: { canonical: "/" },
   openGraph: {
@@ -61,7 +61,7 @@ export default function HomePage() {
             Şartları okuyan okuyucular için dürüst{" "}
             <span className="text-blue-900">iGaming rehberleri</span>; öne
             çıkan ortak{" "}
-            <span className="text-blue-900">Suratbet</span>.
+            <span className="text-blue-900">Robinbet</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
             {siteConfig.tagline} İlk adım olarak rehberlere göz atın; platformları
@@ -70,14 +70,14 @@ export default function HomePage() {
           </p>
           <div className="mt-6 rounded-2xl border border-blue-200/80 bg-sky-50/80 p-4 sm:p-5">
             <p className="text-xs font-semibold uppercase tracking-wide text-blue-800">
-              Suratbet — güncel adres, giriş ve bonus
+              Robinbet — güncel adres, giriş ve bonus
             </p>
             <Suspense
               fallback={
-                <SuratbetActionButtonsFallback variant="hero" className="mt-3" />
+                <RobinbetActionButtonsFallback variant="hero" className="mt-3" />
               }
             >
-              <SuratbetActionButtons variant="hero" className="mt-3" />
+              <RobinbetActionButtons variant="hero" className="mt-3" />
             </Suspense>
           </div>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
@@ -171,7 +171,7 @@ export default function HomePage() {
               </h2>
               <p className="mt-2 max-w-2xl text-sm text-zinc-600">
                 Türkiye’de sık aranan işletmeler hakkında kısa metinler. Dış
-                yönlendirmeler yalnızca Suratbet ortaklık bağlantısıdır.
+                yönlendirmeler yalnızca Robinbet ortaklık bağlantısıdır.
               </p>
             </div>
             <Link

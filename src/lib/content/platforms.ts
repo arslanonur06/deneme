@@ -15,15 +15,15 @@ export type Platform = {
 
 export const platforms: Platform[] = [
   {
-    slug: "suratbet",
+    slug: "robinbet",
     name: siteConfig.partner.name,
     bonus:
-      "Hoş geldin ve promosyonlar bölgeye göre değişir—güncel şartlar için resmi Suratbet sitesine bakın.",
+      "Hoş geldin ve promosyonlar bölgeye göre değişir—güncel şartlar için resmi Robinbet sitesine bakın.",
     minDeposit: "Değişken",
     minDepositNumeric: 10,
     rating: 4.7,
     ctaUrl: siteConfig.partner.affiliateUrl,
-    ctaLabel: "Suratbet’e git",
+    ctaLabel: "Robinbet’e git",
     highlights: [
       "Bu sitede öne çıkan ortak",
       "Takip için ortaklık bağlantımızı kullanın",

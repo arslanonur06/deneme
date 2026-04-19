@@ -1,16 +1,16 @@
 export const siteConfig = {
-  name: "Suratbet Rehberi",
+  name: "Robinbet Rehberi",
   tagline:
-    "Slot ve masa oyunları için tarafsız rehberler sunuyoruz; oynamaya karar verdiğinizde ortağımız Suratbet’i öne çıkarıyoruz.",
+    "Slot ve masa oyunları için tarafsız rehberler sunuyoruz; oynamaya karar verdiğinizde ortağımız Robinbet’i öne çıkarıyoruz.",
   description:
-    "Slotlar, temel strateji ve platform karşılaştırması üzerine eğitici içerik. Suratbet’e ortaklık bağlantısıyla yönlendiriyoruz; güncel kampanyalar, kurallar ve lisans durumunu mutlaka kendi ülkeniz/bölgeniz için resmi siteden doğrulayın.",
+    "Slotlar, temel strateji ve platform karşılaştırması üzerine eğitici içerik. Robinbet’e ortaklık bağlantısıyla yönlendiriyoruz; güncel kampanyalar, kurallar ve lisans durumunu mutlaka kendi ülkeniz/bölgeniz için resmi siteden doğrulayın.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   locale: "tr_TR",
   twitterHandle: "",
   /** Google Search Console — HTML etiketi doğrulaması */
   googleSiteVerification: "5seRghl2xm4Tw4zCPd7CijJ9fc1y-8idrhehFcgqkTs",
   partner: {
-    name: "Suratbet",
+    name: "Robinbet",
     affiliateUrl: "https://t2m.io/srtjlbn",
   },
   /** Markalar (özellikle arama ile gelenler) için PR / iş birliği iletişimi */

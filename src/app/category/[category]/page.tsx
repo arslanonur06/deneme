@@ -3,9 +3,9 @@ import Link from "next/link";
 import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "@/components/layout/suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "@/components/layout/robinbet-action-buttons";
 import { getArticlesByCategory } from "@/lib/content/articles";
 import { kategoriEtiketi } from "@/lib/content/category-labels";
 import { siteConfig } from "@/lib/content/site";
@@ -73,9 +73,9 @@ export default async function CategoryPage({ params }: PageProps) {
           </p>
           <div className="mt-6 max-w-2xl rounded-2xl border border-blue-200 bg-sky-50/90 p-4">
             <Suspense
-              fallback={<SuratbetActionButtonsFallback variant="compact" />}
+              fallback={<RobinbetActionButtonsFallback variant="compact" />}
             >
-              <SuratbetActionButtons variant="compact" />
+              <RobinbetActionButtons variant="compact" />
             </Suspense>
           </div>
         </div>

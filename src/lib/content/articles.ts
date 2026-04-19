@@ -53,7 +53,7 @@ export const articles: Article[] = [
       "european-roulette-strategy-basics",
       "best-platforms-for-low-deposit-play",
     ],
-    recommendedPlatformSlugs: ["suratbet"],
+    recommendedPlatformSlugs: ["robinbet"],
     sections: [
       {
         id: "what-happens-on-each-spin",
@@ -129,7 +129,7 @@ export const articles: Article[] = [
       "how-to-play-online-slots-beginners-guide",
       "best-platforms-for-low-deposit-play",
     ],
-    recommendedPlatformSlugs: ["suratbet"],
+    recommendedPlatformSlugs: ["robinbet"],
     sections: [
       {
         id: "single-zero-versus-double-zero",
@@ -188,7 +188,7 @@ export const articles: Article[] = [
       "küçük depozito platformları",
     ],
     relatedSlugs: ["how-to-play-online-slots-beginners-guide"],
-    recommendedPlatformSlugs: ["suratbet"],
+    recommendedPlatformSlugs: ["robinbet"],
     sections: [
       {
         id: "minimum-deposit-is-not-the-whole-story",
@@ -239,7 +239,7 @@ export const articles: Article[] = [
       "bonus turu slot",
     ],
     relatedSlugs: ["how-to-play-online-slots-beginners-guide"],
-    recommendedPlatformSlugs: ["suratbet"],
+    recommendedPlatformSlugs: ["robinbet"],
     sections: [
       {
         id: "wild-symbols",

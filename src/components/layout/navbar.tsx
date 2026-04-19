@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import { PartnerOutboundLink } from "@/components/partner-outbound-link";
 import { siteConfig } from "@/lib/content/site";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "./suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "./robinbet-action-buttons";
 
 const links = [
   { href: "/blog", label: "Blog" },
@@ -91,8 +91,8 @@ export function Navbar() {
           </nav>
         </div>
         <div className="border-t border-blue-100 pt-3">
-          <Suspense fallback={<SuratbetActionButtonsFallback variant="compact" />}>
-            <SuratbetActionButtons variant="compact" />
+          <Suspense fallback={<RobinbetActionButtonsFallback variant="compact" />}>
+            <RobinbetActionButtons variant="compact" />
           </Suspense>
         </div>
         </div>

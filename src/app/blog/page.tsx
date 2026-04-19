@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "@/components/layout/suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "@/components/layout/robinbet-action-buttons";
 import { blogPosts } from "@/lib/content/blog-posts";
 import { siteConfig } from "@/lib/content/site";
 
@@ -47,9 +47,9 @@ export default function BlogPage() {
           </p>
           <div className="mt-6 rounded-2xl border border-blue-200 bg-sky-50/90 p-4">
             <Suspense
-              fallback={<SuratbetActionButtonsFallback variant="compact" />}
+              fallback={<RobinbetActionButtonsFallback variant="compact" />}
             >
-              <SuratbetActionButtons variant="compact" />
+              <RobinbetActionButtons variant="compact" />
             </Suspense>
           </div>
         </div>

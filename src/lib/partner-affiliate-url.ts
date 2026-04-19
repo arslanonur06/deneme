@@ -14,7 +14,7 @@ export const PARTNER_TRACKING_PARAM_KEYS = [
   "fbclid",
 ] as const;
 
-export const PARTNER_TRACKING_STORAGE_KEY = "suratbet-partner-tracking";
+export const PARTNER_TRACKING_STORAGE_KEY = "robinbet-partner-tracking";
 
 export function mergePartnerTrackingParams(
   incoming: URLSearchParams,

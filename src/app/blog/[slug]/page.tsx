@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
 
           <aside className="mt-10 rounded-2xl border border-blue-200/70 bg-blue-50/40 p-5 text-sm text-blue-950">
-            <p className="font-semibold">Suratbet ve güncel teklifler</p>
+            <p className="font-semibold">Robinbet ve güncel teklifler</p>
             <p className="mt-2 text-blue-900/90">
               Kampanyalar sık değişir. Güncel deneme veya hoş geldin koşulları
               için resmi sayfayı kontrol edin; karşılaştırma tablomuz genel

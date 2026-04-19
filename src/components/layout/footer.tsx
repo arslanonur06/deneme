@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Suspense } from "react";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "@/components/layout/suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "@/components/layout/robinbet-action-buttons";
 import { siteConfig } from "@/lib/content/site";
 
 export function Footer() {
@@ -15,9 +15,9 @@ export function Footer() {
             {siteConfig.partner.name} — güncel adres & giriş
           </p>
           <Suspense
-            fallback={<SuratbetActionButtonsFallback className="mt-3" variant="default" />}
+            fallback={<RobinbetActionButtonsFallback className="mt-3" variant="default" />}
           >
-            <SuratbetActionButtons className="mt-3" variant="default" />
+            <RobinbetActionButtons className="mt-3" variant="default" />
           </Suspense>
         </div>
       </div>

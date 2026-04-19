@@ -5,9 +5,9 @@ import {
   PlatformComparisonInner,
 } from "@/components/compare/platform-comparison-client";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "@/components/layout/suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "@/components/layout/robinbet-action-buttons";
 import { platforms } from "@/lib/content/platforms";
 import { siteConfig } from "@/lib/content/site";
 
@@ -38,16 +38,16 @@ export default function ComparePlatformsPage() {
             Platform karşılaştırma tablosu
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-600">
-            <strong className="font-medium text-foreground">Suratbet</strong>{" "}
+            <strong className="font-medium text-foreground">Robinbet</strong>{" "}
             öne çıkan ortağımızdır—mavi ana CTA, izlenen ortaklık bağlantımızı
             kullanır. Diğer satırlar tabloyu anlamlı tutmak için ortak olmayan
             yer tutuculardır (example.com); tümünü resmi sitelerde doğrulayın.
           </p>
           <div className="mt-6 max-w-3xl rounded-2xl border border-blue-200 bg-sky-50/90 p-4">
             <Suspense
-              fallback={<SuratbetActionButtonsFallback variant="compact" />}
+              fallback={<RobinbetActionButtonsFallback variant="compact" />}
             >
-              <SuratbetActionButtons variant="compact" />
+              <RobinbetActionButtons variant="compact" />
             </Suspense>
           </div>
         </div>

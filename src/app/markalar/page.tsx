@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Suspense } from "react";
 import {
-  SuratbetActionButtons,
-  SuratbetActionButtonsFallback,
-} from "@/components/layout/suratbet-action-buttons";
+  RobinbetActionButtons,
+  RobinbetActionButtonsFallback,
+} from "@/components/layout/robinbet-action-buttons";
 import { operatorSpotlights } from "@/lib/content/operator-spotlights";
 import { siteConfig } from "@/lib/content/site";
 
@@ -13,13 +13,13 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Popüler işletmeler — bilgi sayfaları",
   description:
-    "Türkiye’de sık aranan çevrim içi bahis ve casino markaları hakkında kısa bilgilendirici sayfalar. Dış CTA yalnızca Suratbet ortaklık bağlantısıdır.",
+    "Türkiye’de sık aranan çevrim içi bahis ve casino markaları hakkında kısa bilgilendirici sayfalar. Dış CTA yalnızca Robinbet ortaklık bağlantısıdır.",
   alternates: { canonical: "/markalar" },
   openGraph: {
     url: new URL("/markalar", siteConfig.url).toString(),
     title: `Markalar — ${siteConfig.name}`,
     description:
-      "Marka bilgi sayfaları; ortaklık yönlendirmesi yalnızca Suratbet içindir.",
+      "Marka bilgi sayfaları; ortaklık yönlendirmesi yalnızca Robinbet içindir.",
   },
 };
 
@@ -44,15 +44,15 @@ export default function MarkalarIndexPage() {
             değildir; güncel kampanya ve lisans için ilgili markanın resmi
             kaynaklarına bakın.{" "}
             <strong className="font-medium text-foreground">
-              Tüm dış yönlendirmelerimiz yalnızca ortağımız Suratbet (
+              Tüm dış yönlendirmelerimiz yalnızca ortağımız Robinbet (
               {siteConfig.partner.affiliateUrl}) adresine gider.
             </strong>
           </p>
           <div className="mt-6 max-w-3xl rounded-2xl border border-blue-200 bg-sky-50/90 p-4">
             <Suspense
-              fallback={<SuratbetActionButtonsFallback variant="compact" />}
+              fallback={<RobinbetActionButtonsFallback variant="compact" />}
             >
-              <SuratbetActionButtons variant="compact" />
+              <RobinbetActionButtons variant="compact" />
             </Suspense>
           </div>
         </div>

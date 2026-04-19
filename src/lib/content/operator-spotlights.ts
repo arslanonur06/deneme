@@ -1,7 +1,7 @@
 /**
  * Türkiye’de sık aranan işletme adları hakkında bilgilendirici kısa sayfalar.
  * Ticari markalar üçüncü taraflara aittir; bu siteyle doğrudan bağlantı iddia edilmez.
- * Tüm dış CTA’lar yalnızca siteConfig.partner.affiliateUrl (Suratbet) adresine gider.
+ * Tüm dış CTA’lar yalnızca siteConfig.partner.affiliateUrl (Robinbet) adresine gider.
  */
 export type OperatorSpotlight = {
   slug: string;

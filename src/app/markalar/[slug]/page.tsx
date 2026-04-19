@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { SuratbetPartnerCta } from "@/components/markalar/suratbet-partner-cta";
+import { RobinbetPartnerCta } from "@/components/markalar/robinbet-partner-cta";
 import { ArticleJsonLd } from "@/components/seo/json-ld";
 import {
   getAllOperatorSlugs,
@@ -50,7 +50,7 @@ export default async function MarkaPage({ params }: PageProps) {
     "online bahis",
     "casino",
     "Türkiye",
-    "Suratbet",
+    "Robinbet",
   ];
 
   return (
@@ -105,7 +105,7 @@ export default async function MarkaPage({ params }: PageProps) {
           </div>
 
           <div className="mt-10">
-            <SuratbetPartnerCta />
+            <RobinbetPartnerCta />
           </div>
 
           <p className="mt-10 text-center">

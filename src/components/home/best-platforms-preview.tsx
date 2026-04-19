@@ -12,10 +12,10 @@ export function BestPlatformsPreview() {
             id="best-platforms-heading"
             className="text-2xl font-semibold tracking-tight"
           >
-            Suratbet ve özet karşılaştırma
+            Robinbet ve özet karşılaştırma
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-zinc-600 sm:text-base">
-            Suratbet öne çıkan ortağımızdır (gerçek CTA). Diğer satırlar tablo
+            Robinbet öne çıkan ortağımızdır (gerçek CTA). Diğer satırlar tablo
             düzeni içindir—güncel teklifleri her markanın resmi sitesinde
             doğrulayın.
           </p>

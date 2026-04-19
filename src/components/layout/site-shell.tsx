@@ -3,9 +3,9 @@ import { Suspense } from "react";
 import { Footer } from "./footer";
 import { Navbar } from "./navbar";
 import {
-  StickySuratbetBar,
-  StickySuratbetBarFallback,
-} from "./sticky-suratbet-bar";
+  StickyRobinbetBar,
+  StickyRobinbetBarFallback,
+} from "./sticky-robinbet-bar";
 
 export function SiteShell({ children }: { children: ReactNode }) {
   return (
@@ -13,8 +13,8 @@ export function SiteShell({ children }: { children: ReactNode }) {
       <Navbar />
       <div className="flex-1 pb-20 sm:pb-16">{children}</div>
       <Footer />
-      <Suspense fallback={<StickySuratbetBarFallback />}>
-        <StickySuratbetBar />
+      <Suspense fallback={<StickyRobinbetBarFallback />}>
+        <StickyRobinbetBar />
       </Suspense>
     </>
   );
