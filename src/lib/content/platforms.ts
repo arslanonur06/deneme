@@ -18,12 +18,12 @@ export const platforms: Platform[] = [
     slug: "robinbet",
     name: siteConfig.partner.name,
     bonus:
-      "Hoş geldin ve promosyonlar bölgeye göre değişir—güncel şartlar için resmi Robinbet sitesine bakın.",
+      "Güncel duyurular ve iletişim için Telegram (@kittyxeniaa) kanalına bakın; üçüncü taraf tekliflerini kendi araştırmanızla doğrulayın.",
     minDeposit: "Değişken",
     minDepositNumeric: 10,
     rating: 4.7,
     ctaUrl: siteConfig.partner.affiliateUrl,
-    ctaLabel: "Robinbet’e git",
+    ctaLabel: "Telegram’a git",
     highlights: [
       "Bu sitede öne çıkan ortak",
       "Takip için ortaklık bağlantımızı kullanın",

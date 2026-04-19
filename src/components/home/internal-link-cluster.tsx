@@ -32,9 +32,8 @@ export function InternalLinkCluster() {
         Konu kümeleri
       </h2>
       <p className="mt-2 max-w-2xl text-sm text-zinc-600 sm:text-base">
-        İçerik, okuyucuların (ve arama motorlarının) temellerden karşılaştırmaya
-        doğru mantıksal bir yol izlemesi için gruplandı—anahtar kelime
-        doldurma olmadan.
+        İlgili yazıları konu başlıkları altında topladık; temellerden
+        karşılaştırmaya geçerken okumayı kolaylaştırmayı hedefliyoruz.
       </p>
       <div className="mt-8 grid gap-4 sm:grid-cols-3">
         {topicClusters.map((cluster) => (
@@ -52,7 +51,7 @@ export function InternalLinkCluster() {
                   <li key={slug}>
                     <Link
                       href={`/articles/${slug}`}
-                      className="font-medium text-blue-900 underline-offset-4 hover:underline"
+                      className="font-medium text-emerald-900 underline-offset-4 hover:underline"
                     >
                       {article.title}
                     </Link>

@@ -9,7 +9,7 @@ import {
 } from "@/lib/partner-affiliate-url";
 
 /**
- * Ortak Robinbet URL’sine mevcut sayfadaki btag / UTM vb. parametreleri ekler;
+ * Ortak Telegram URL’sine mevcut sayfadaki btag / UTM vb. parametreleri ekler;
  * oturum boyunca sessionStorage ile sonraki sayfa geçişlerinde de korunur.
  */
 export function usePartnerAffiliateHref(): string {

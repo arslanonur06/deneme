@@ -104,9 +104,9 @@ export default async function BlogPostPage({ params }: PageProps) {
             ))}
           </div>
 
-          <aside className="mt-10 rounded-2xl border border-blue-200/70 bg-blue-50/40 p-5 text-sm text-blue-950">
-            <p className="font-semibold">Robinbet ve güncel teklifler</p>
-            <p className="mt-2 text-blue-900/90">
+          <aside className="mt-10 rounded-2xl border border-emerald-200/70 bg-emerald-50/40 p-5 text-sm text-emerald-950">
+            <p className="font-semibold">Telegram ve güncel duyurular</p>
+            <p className="mt-2 text-emerald-900/90">
               Kampanyalar sık değişir. Güncel deneme veya hoş geldin koşulları
               için resmi sayfayı kontrol edin; karşılaştırma tablomuz genel
               notlar içindir.
@@ -118,23 +118,23 @@ export default async function BlogPostPage({ params }: PageProps) {
                     href={siteConfig.partner.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="inline-flex rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-900"
+                    className="inline-flex rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-900"
                   >
-                    {siteConfig.partner.name}’i ziyaret et
+                    {siteConfig.partner.visitCta}
                   </a>
                 }
               >
                 <PartnerOutboundLink
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  className="inline-flex rounded-lg bg-blue-700 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-900"
+                  className="inline-flex rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-900"
                 >
-                  {siteConfig.partner.name}’i ziyaret et
+                  {siteConfig.partner.visitCta}
                 </PartnerOutboundLink>
               </Suspense>
               <Link
                 href="/compare/platforms"
-                className="inline-flex items-center rounded-lg border border-blue-300 bg-white px-4 py-2 text-sm font-semibold text-blue-950 hover:bg-blue-50"
+                className="inline-flex items-center rounded-lg border border-amber-300 bg-white px-4 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-50"
               >
                 Karşılaştırma tablosu
               </Link>
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <p className="mt-8 text-center">
             <Link
               href="/blog"
-              className="text-sm font-medium text-blue-900 underline-offset-4 hover:underline"
+              className="text-sm font-medium text-emerald-900 underline-offset-4 hover:underline"
             >
               ← Tüm blog yazıları
             </Link>

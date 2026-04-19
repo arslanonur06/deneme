@@ -16,7 +16,7 @@ export const revalidate = 3600;
 export const metadata: Metadata = {
   title: "Platform karşılaştırması — bonuslar, yatırımlar ve puanlar",
   description:
-    "Örnek platform görüntülerini yan yana karşılaştırın: özet bonuslar, minimum yatırımlar, editoryal puan ve dış CTA’lar.",
+    "Bonus özeti, minimum yatırım ve puanları yan yana görün. Tabloda bir Telegram yönlendirmesi ve karşılaştırma için örnek satırlar yer alır.",
   alternates: { canonical: "/compare/platforms" },
   openGraph: {
     url: new URL("/compare/platforms", siteConfig.url).toString(),
@@ -29,21 +29,21 @@ export const metadata: Metadata = {
 export default function ComparePlatformsPage() {
   return (
     <main>
-      <header className="border-b border-blue-200/60 bg-white/90 backdrop-blur-sm">
+      <header className="border-b border-emerald-200/60 bg-white/90 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-          <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
             Karşılaştırma merkezi
           </p>
           <h1 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
             Platform karşılaştırma tablosu
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-600">
-            <strong className="font-medium text-foreground">Robinbet</strong>{" "}
-            öne çıkan ortağımızdır—mavi ana CTA, izlenen ortaklık bağlantımızı
-            kullanır. Diğer satırlar tabloyu anlamlı tutmak için ortak olmayan
-            yer tutuculardır (example.com); tümünü resmi sitelerde doğrulayın.
+            <strong className="font-medium text-foreground">Telegram (@kittyxeniaa)</strong>{" "}
+            öne çıkan iletişim kanalımızdır; mavi ana düğmeler bu adrese gider.
+            Diğer satırlar tabloyu tamamlamak için örnektir (example.com); güncel
+            bilgi için ilgili markanın resmi sitesine bakın.
           </p>
-          <div className="mt-6 max-w-3xl rounded-2xl border border-blue-200 bg-sky-50/90 p-4">
+          <div className="mt-6 max-w-3xl rounded-2xl border border-emerald-200 bg-emerald-50/90 p-4">
             <Suspense
               fallback={<RobinbetActionButtonsFallback variant="compact" />}
             >
@@ -67,17 +67,16 @@ export default function ComparePlatformsPage() {
 
         <section className="mt-12 rounded-2xl border border-zinc-200/80 bg-zinc-50/60 p-6 sm:p-8">
           <h2 className="text-lg font-semibold tracking-tight">
-            Ortaklık CTA’larını bilinçli okumak
+            Dış bağlantılar ve şeffaflık
           </h2>
           <p className="mt-3 text-sm leading-relaxed text-zinc-600">
-            Dış düğmeler ortaklık bağlantısı olabilir (
+            Bazı düğmeler ücretli yönlendirme içerebilir; ilgili bağlantılar{" "}
             <code className="rounded bg-white px-1 py-0.5 text-xs">
               rel=&quot;sponsored&quot;
             </code>{" "}
-            ile işaretlenir). Komisyonlar size ek ücret yansıtmadan da
-            oluşabilir; yine de yayıncının neyi öne çıkardığını etkileyebilir.
-            Lisansı çapraz kontrol edin, teklifleri bölgenizde doğrulayın ve asla
-            kayıpları telafi etmeye çalışmayın.
+            ile işaretlenir. Teklif ve lisans bilgisini her zaman resmi kaynakta
+            doğrulayın. Kumar kaybını telafi etmeye çalışmayın; sorumlu oyun
+            sınırlarına uyun.
           </p>
         </section>
       </div>

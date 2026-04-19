@@ -12,17 +12,17 @@ export function BestPlatformsPreview() {
             id="best-platforms-heading"
             className="text-2xl font-semibold tracking-tight"
           >
-            Robinbet ve özet karşılaştırma
+            Telegram ve özet karşılaştırma
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-zinc-600 sm:text-base">
-            Robinbet öne çıkan ortağımızdır (gerçek CTA). Diğer satırlar tablo
+            Telegram (@kittyxeniaa) öne çıkan iletişim kanalımızdır (gerçek CTA). Diğer satırlar tablo
             düzeni içindir—güncel teklifleri her markanın resmi sitesinde
             doğrulayın.
           </p>
         </div>
         <Link
           href="/compare/platforms"
-          className="text-sm font-semibold text-blue-900 underline-offset-4 hover:underline"
+          className="text-sm font-semibold text-emerald-900 underline-offset-4 hover:underline"
         >
           Tam karşılaştırmayı aç
         </Link>
@@ -63,7 +63,7 @@ export function BestPlatformsPreview() {
                 <td className="px-4 py-3">
                   <Link
                     href="/compare/platforms"
-                    className="font-semibold text-blue-900 underline-offset-4 hover:underline"
+                    className="font-semibold text-emerald-900 underline-offset-4 hover:underline"
                   >
                     Karşılaştır
                   </Link>

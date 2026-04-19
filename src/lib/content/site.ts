@@ -1,23 +1,26 @@
 export const siteConfig = {
   name: "Robinbet Rehberi",
   tagline:
-    "Slot ve masa oyunları için tarafsız rehberler sunuyoruz; oynamaya karar verdiğinizde ortağımız Robinbet’i öne çıkarıyoruz.",
+    "Slot ve masa oyunları için tarafsız rehberler sunuyoruz; güncel duyuru ve iletişim için Telegram kanalımızı öne çıkarıyoruz.",
   description:
-    "Slotlar, temel strateji ve platform karşılaştırması üzerine eğitici içerik. Robinbet’e ortaklık bağlantısıyla yönlendiriyoruz; güncel kampanyalar, kurallar ve lisans durumunu mutlaka kendi ülkeniz/bölgeniz için resmi siteden doğrulayın.",
+    "Slotlar, temel strateji ve platform karşılaştırması üzerine eğitici içerik. Telegram (@kittyxeniaa) kanalına yönlendiriyoruz; güncel kampanyalar, kurallar ve risk bilgilendirmesini kendi araştırmanızla doğrulayın.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   locale: "tr_TR",
   twitterHandle: "",
   /** Google Search Console — HTML etiketi doğrulaması */
   googleSiteVerification: "5seRghl2xm4Tw4zCPd7CijJ9fc1y-8idrhehFcgqkTs",
   partner: {
-    name: "Robinbet",
-    affiliateUrl: "https://t2m.io/srtjlbn",
+    name: "Telegram",
+    telegramHandle: "kittyxeniaa",
+    affiliateUrl: "https://t.me/kittyxeniaa",
+    /** Ana dış CTA metni (Türkçe). */
+    visitCta: "Telegram'da kittyxeniaa",
   },
-  /** Markalar (özellikle arama ile gelenler) için PR / iş birliği iletişimi */
+  /** Reklam, sponsorluk ve marka iş birliği iletişimi */
   brandPr: {
     line:
-      "Google aramasıyla gelen markalar: PR anlaşması ve iş birliği için bize ulaşın.",
-    ctaLabel: "Telegram",
+      "Reklam, sponsorluk veya marka iş birliği talepleriniz için Telegram üzerinden ulaşabilirsiniz.",
+    ctaLabel: "İş birliği için yaz",
     href: "https://t.me/jelibonmarketing",
   },
 } as const;

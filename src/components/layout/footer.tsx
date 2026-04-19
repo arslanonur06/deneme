@@ -8,11 +8,11 @@ import { siteConfig } from "@/lib/content/site";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-blue-200/70 bg-white/90 backdrop-blur-sm">
+    <footer className="mt-auto border-t border-emerald-200/70 bg-white/90 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <div className="rounded-2xl border border-blue-200 bg-sky-50/90 p-4 sm:p-5">
-          <p className="text-sm font-semibold text-blue-950">
-            {siteConfig.partner.name} — güncel adres & giriş
+        <div className="rounded-2xl border border-emerald-200 bg-emerald-50/90 p-4 sm:p-5">
+          <p className="text-sm font-semibold text-emerald-950">
+            {siteConfig.partner.name} (@{siteConfig.partner.telegramHandle}) — kanal
           </p>
           <Suspense
             fallback={<RobinbetActionButtonsFallback className="mt-3" variant="default" />}

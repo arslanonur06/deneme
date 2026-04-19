@@ -15,7 +15,7 @@ const dmSans = DM_Sans({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#dbeafe",
+  themeColor: "#d1fae5",
 };
 
 export const metadata: Metadata = {

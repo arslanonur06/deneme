@@ -50,7 +50,7 @@ export default async function MarkaPage({ params }: PageProps) {
     "online bahis",
     "casino",
     "Türkiye",
-    "Robinbet",
+    "Telegram",
   ];
 
   return (
@@ -111,7 +111,7 @@ export default async function MarkaPage({ params }: PageProps) {
           <p className="mt-10 text-center">
             <Link
               href="/markalar"
-              className="text-sm font-medium text-blue-900 underline-offset-4 hover:underline"
+              className="text-sm font-medium text-emerald-900 underline-offset-4 hover:underline"
             >
               ← Tüm markalar
             </Link>

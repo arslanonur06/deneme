@@ -13,9 +13,9 @@ const quick = [
 
 function StickyRobinbetBarInner({ href }: { href: string }) {
   return (
-    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-40 border-t border-blue-200/80 bg-white/90 backdrop-blur-md supports-[padding:max(0px)]:pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+    <div className="pointer-events-none fixed inset-x-0 bottom-0 z-40 border-t border-emerald-200/80 bg-white/90 backdrop-blur-md supports-[padding:max(0px)]:pb-[max(0.5rem,env(safe-area-inset-bottom))]">
       <div className="pointer-events-auto mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-2 px-3 py-2 sm:justify-between sm:px-6">
-        <p className="hidden text-xs font-medium text-blue-900 sm:block">
+        <p className="hidden text-xs font-medium text-emerald-900 sm:block">
           {siteConfig.partner.name} — hızlı erişim
         </p>
         <div className="flex flex-wrap justify-center gap-2">
@@ -27,8 +27,8 @@ function StickyRobinbetBarInner({ href }: { href: string }) {
               rel={rel}
               className={
                 i === 0
-                  ? "rounded-full bg-blue-700 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-blue-800 sm:text-sm"
-                  : "rounded-full border border-blue-600 bg-white px-3 py-1.5 text-xs font-semibold text-blue-900 hover:bg-blue-50 sm:text-sm"
+                  ? "rounded-full bg-emerald-700 px-3 py-1.5 text-xs font-semibold text-white shadow hover:bg-emerald-800 sm:text-sm"
+                  : "rounded-full border border-amber-500 bg-white px-3 py-1.5 text-xs font-semibold text-emerald-900 hover:bg-amber-50/80 sm:text-sm"
               }
             >
               {q.label}
@@ -38,7 +38,7 @@ function StickyRobinbetBarInner({ href }: { href: string }) {
             href={href}
             target="_blank"
             rel={rel}
-            className="rounded-full border border-blue-400 bg-sky-100 px-3 py-1.5 text-xs font-semibold text-blue-950 hover:bg-sky-200 sm:text-sm"
+            className="rounded-full border border-amber-400 bg-amber-50 px-3 py-1.5 text-xs font-semibold text-emerald-950 hover:bg-amber-100 sm:text-sm"
           >
             Bonus
           </a>
@@ -49,7 +49,7 @@ function StickyRobinbetBarInner({ href }: { href: string }) {
 }
 
 /**
- * Mobil ve masaüstünde sürekli erişim için alt sabit çubuk (tümü Robinbet ortak URL).
+ * Mobil ve masaüstünde sürekli erişim için alt sabit çubuk (tümü Telegram ortak URL).
  */
 export function StickyRobinbetBar() {
   const href = usePartnerAffiliateHref();

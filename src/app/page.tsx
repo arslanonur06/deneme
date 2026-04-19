@@ -52,25 +52,25 @@ export default function HomePage() {
 
   return (
     <main>
-      <section className="border-b border-blue-200/60 bg-white/85 backdrop-blur-sm">
+      <section className="border-b border-emerald-200/60 bg-white/85 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:px-6 sm:py-20">
-          <p className="text-xs font-semibold uppercase tracking-wide text-blue-700">
+          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
             Eğitim • Karşılaştırmaya uygun • Şeffaf açıklamalar
           </p>
           <h1 className="mt-4 max-w-3xl text-3xl font-semibold tracking-tight sm:text-5xl sm:leading-tight">
             Şartları okuyan okuyucular için dürüst{" "}
-            <span className="text-blue-900">iGaming rehberleri</span>; öne
+            <span className="text-emerald-900">iGaming rehberleri</span>; öne
             çıkan ortak{" "}
-            <span className="text-blue-900">Robinbet</span>.
+            <span className="text-amber-700">Telegram (@kittyxeniaa)</span>.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-zinc-600 sm:text-lg">
             {siteConfig.tagline} İlk adım olarak rehberlere göz atın; platformları
             yan yana görmek için karşılaştırma sayfasına geçin. Kayıpları telafi
             etme beklentisi taşımadan, sorumlu oyun sınırlarınıza uyun.
           </p>
-          <div className="mt-6 rounded-2xl border border-blue-200/80 bg-sky-50/80 p-4 sm:p-5">
-            <p className="text-xs font-semibold uppercase tracking-wide text-blue-800">
-              Robinbet — güncel adres, giriş ve bonus
+          <div className="mt-6 rounded-2xl border border-emerald-200/80 bg-emerald-50/80 p-4 sm:p-5">
+            <p className="text-xs font-semibold uppercase tracking-wide text-emerald-800">
+              Telegram — @kittyxeniaa kanalı
             </p>
             <Suspense
               fallback={
@@ -87,29 +87,29 @@ export default function HomePage() {
                   href={siteConfig.partner.affiliateUrl}
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-800"
+                  className="inline-flex items-center justify-center rounded-xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
                 >
-                  {siteConfig.partner.name}’i ziyaret et
+                  {siteConfig.partner.visitCta}
                 </a>
               }
             >
               <PartnerOutboundLink
                 target="_blank"
                 rel="noopener noreferrer sponsored"
-                className="inline-flex items-center justify-center rounded-xl bg-blue-700 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-blue-800"
+                className="inline-flex items-center justify-center rounded-xl bg-emerald-700 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-emerald-800"
               >
-                {siteConfig.partner.name}’i ziyaret et
+                {siteConfig.partner.visitCta}
               </PartnerOutboundLink>
             </Suspense>
             <Link
               href="/compare/platforms"
-              className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-blue-300"
+              className="inline-flex items-center justify-center rounded-xl border border-emerald-200 bg-white px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-amber-400"
             >
               Platformları karşılaştır
             </Link>
             <Link
               href="/articles/how-to-play-online-slots-beginners-guide"
-              className="inline-flex items-center justify-center rounded-xl border border-blue-200 bg-white px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-blue-300"
+              className="inline-flex items-center justify-center rounded-xl border border-emerald-200 bg-white px-5 py-3 text-sm font-semibold text-foreground transition-colors hover:border-amber-400"
             >
               Başlangıç rehberini oku
             </Link>
@@ -136,7 +136,7 @@ export default function HomePage() {
             </div>
             <Link
               href="/blog"
-              className="text-sm font-semibold text-blue-900 underline-offset-4 hover:underline"
+              className="text-sm font-semibold text-emerald-900 underline-offset-4 hover:underline"
             >
               Tümünü gör
             </Link>
@@ -146,7 +146,7 @@ export default function HomePage() {
               <li key={post.slug}>
                 <Link
                   href={`/blog/${post.slug}`}
-                  className="block rounded-xl border border-zinc-200/80 bg-zinc-50/50 p-4 transition-colors hover:border-blue-200 hover:bg-blue-50/30"
+                  className="block rounded-xl border border-zinc-200/80 bg-zinc-50/50 p-4 transition-colors hover:border-emerald-300 hover:bg-emerald-50/30"
                 >
                   <span className="font-medium text-foreground">
                     {post.title}
@@ -171,12 +171,12 @@ export default function HomePage() {
               </h2>
               <p className="mt-2 max-w-2xl text-sm text-zinc-600">
                 Türkiye’de sık aranan işletmeler hakkında kısa metinler. Dış
-                yönlendirmeler yalnızca Robinbet ortaklık bağlantısıdır.
+                yönlendirmeler yalnızca Telegram (@kittyxeniaa) kanalına gider.
               </p>
             </div>
             <Link
               href="/markalar"
-              className="text-sm font-semibold text-blue-900 underline-offset-4 hover:underline"
+              className="text-sm font-semibold text-emerald-900 underline-offset-4 hover:underline"
             >
               Tüm markalar
             </Link>
@@ -186,7 +186,7 @@ export default function HomePage() {
               <li key={op.slug}>
                 <Link
                   href={`/markalar/${op.slug}`}
-                  className="block rounded-xl border border-zinc-200/80 bg-white p-4 transition-colors hover:border-blue-200"
+                  className="block rounded-xl border border-zinc-200/80 bg-white p-4 transition-colors hover:border-emerald-300"
                 >
                   <span className="font-medium text-foreground">
                     {op.brandName}
@@ -210,7 +210,7 @@ export default function HomePage() {
             </h2>
             <Link
               href="/category/guides"
-              className="text-sm font-semibold text-blue-900 underline-offset-4 hover:underline"
+              className="text-sm font-semibold text-emerald-900 underline-offset-4 hover:underline"
             >
               Rehberlere göz at
             </Link>
@@ -225,7 +225,7 @@ export default function HomePage() {
                   <h3 className="mt-2 text-lg font-semibold leading-snug">
                     <Link
                       href={`/articles/${article.slug}`}
-                      className="hover:text-blue-900"
+                      className="hover:text-emerald-900"
                     >
                       {article.title}
                     </Link>
@@ -263,9 +263,9 @@ export default function HomePage() {
               <li key={c.href}>
                 <Link
                   href={c.href}
-                  className="block h-full rounded-2xl border border-zinc-200/80 bg-zinc-50/50 p-5 transition-colors hover:border-blue-200 hover:bg-blue-50/40"
+                  className="block h-full rounded-2xl border border-zinc-200/80 bg-zinc-50/50 p-5 transition-colors hover:border-emerald-300 hover:bg-emerald-50/40"
                 >
-                  <p className="text-sm font-semibold text-blue-950">
+                  <p className="text-sm font-semibold text-emerald-950">
                     {c.title}
                   </p>
                   <p className="mt-2 text-sm text-zinc-600">{c.copy}</p>
@@ -278,22 +278,27 @@ export default function HomePage() {
         <InternalLinkCluster />
 
         <section
-          className="mt-16 rounded-2xl border border-dashed border-zinc-300 bg-white p-6 sm:p-8"
-          aria-label="Sponsorluklar"
+          className="mt-16 rounded-2xl border border-zinc-200 bg-zinc-50/60 p-6 sm:p-8"
+          aria-labelledby="sponsorship-heading"
         >
-          <h2 className="text-lg font-semibold tracking-tight">
-            Sponsor alanı (hazır)
+          <h2
+            id="sponsorship-heading"
+            className="text-lg font-semibold tracking-tight"
+          >
+            Reklam ve iş birliği
           </h2>
           <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-600">
-            Bu blok bilinçli olarak sade tutuldu: marka hikâyesi, araştırma
-            ortaklığı veya tek birincil sponsor için kullanın. Metni doğrulukla
-            tutun, bölgesel kurallara uygun şekilde reklam etiketleyin ve okur
-            güvenini önceliklendirin.
+            {siteConfig.brandPr.line} Ücretli veya sponsorlu içeriklerde
+            yürürlükteki etiketleme ve reklam kurallarına uygun davranırız.
           </p>
-          <p className="mt-4 text-sm font-medium text-zinc-500">
-            İş birliği için kendi kontrolünüzde bir iletişim kanalı (e-posta veya
-            hafif bir form) ekleyip buraya bağlayın.
-          </p>
+          <a
+            href={siteConfig.brandPr.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center justify-center rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-zinc-800"
+          >
+            {siteConfig.brandPr.ctaLabel}
+          </a>
         </section>
 
         <section className="mt-14 rounded-2xl border border-zinc-200/80 bg-white p-6 sm:p-8">
@@ -313,7 +318,7 @@ export default function HomePage() {
                 >
                   <Link
                     href={`/articles/${a.slug}`}
-                    className="font-medium text-foreground hover:text-blue-900"
+                    className="font-medium text-foreground hover:text-emerald-900"
                   >
                     {a.title}
                   </Link>
