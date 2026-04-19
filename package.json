@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
     "build": "node scripts/check-no-merge-conflicts.mjs && next build --webpack",
     "start": "next start",
     "lint": "eslint . && node scripts/check-no-merge-conflicts.mjs"
