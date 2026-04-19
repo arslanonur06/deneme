@@ -1,5 +1,8 @@
 import Link from "next/link";
 import { getPlatformsSortedByRating } from "@/lib/content/platforms";
+import { siteConfig } from "@/lib/content/site";
+
+const relSponsored = "noopener noreferrer sponsored" as const;
 
 export function BestPlatformsPreview() {
   const top = getPlatformsSortedByRating().slice(0, 4);
@@ -12,17 +15,16 @@ export function BestPlatformsPreview() {
             id="best-platforms-heading"
             className="text-2xl font-semibold tracking-tight"
           >
-            Telegram ve özet karşılaştırma
+            Kısa tablo — Türkiye pazarı
           </h2>
           <p className="mt-2 max-w-2xl text-sm text-zinc-600 sm:text-base">
-            Telegram (@kittyxeniaa) öne çıkan iletişim kanalımızdır (gerçek CTA). Diğer satırlar tablo
-            düzeni içindir—güncel teklifleri her markanın resmi sitesinde
-            doğrulayın.
+            Aşağıda yalnızca özet puan ve notlar var; bonus şartlarını her zaman
+            ilgili markanın kendi sayfasından okuyun.
           </p>
         </div>
         <Link
           href="/compare/platforms"
-          className="text-sm font-semibold text-emerald-900 underline-offset-4 hover:underline"
+          className="text-sm font-semibold text-forest-900 underline-offset-4 hover:underline"
         >
           Tam karşılaştırmayı aç
         </Link>
@@ -33,10 +35,10 @@ export function BestPlatformsPreview() {
           <thead className="bg-zinc-50 text-xs font-semibold uppercase tracking-wide text-zinc-500">
             <tr>
               <th scope="col" className="px-4 py-3">
-                Platform
+                Marka
               </th>
               <th scope="col" className="px-4 py-3">
-                Bonus
+                Bonus (özet)
               </th>
               <th scope="col" className="px-4 py-3">
                 Min. yatırım
@@ -53,7 +55,24 @@ export function BestPlatformsPreview() {
             {top.map((p) => (
               <tr key={p.slug}>
                 <td className="px-4 py-3 font-medium">{p.name}</td>
-                <td className="px-4 py-3 text-zinc-600">{p.bonus}</td>
+                <td className="px-4 py-3 text-zinc-600">
+                  {p.slug === "robinbet" ? (
+                    <>
+                      Kampanya metinleri sık değişir;{" "}
+                      <a
+                        href={siteConfig.partner.affiliateUrl}
+                        target="_blank"
+                        rel={relSponsored}
+                        className="font-semibold text-forest-800 underline decoration-gold-400 underline-offset-2 hover:text-forest-950"
+                      >
+                        güncel giriş notu
+                      </a>{" "}
+                      ve duyuru için burayı kullanın.
+                    </>
+                  ) : (
+                    p.bonus
+                  )}
+                </td>
                 <td className="px-4 py-3 tabular-nums text-zinc-600">
                   {p.minDeposit}
                 </td>
@@ -63,7 +82,7 @@ export function BestPlatformsPreview() {
                 <td className="px-4 py-3">
                   <Link
                     href="/compare/platforms"
-                    className="font-semibold text-emerald-900 underline-offset-4 hover:underline"
+                    className="font-semibold text-forest-900 underline-offset-4 hover:underline"
                   >
                     Karşılaştır
                   </Link>

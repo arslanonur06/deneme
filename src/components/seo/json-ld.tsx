@@ -80,12 +80,15 @@ type OrganizationJsonLdProps = {
   name: string;
   url: string;
   description: string;
+  /** Arama / şema için konu anahtarları */
+  keywords?: readonly string[];
 };
 
 export function OrganizationJsonLd({
   name,
   url,
   description,
+  keywords,
 }: OrganizationJsonLdProps) {
   const data = {
     "@context": "https://schema.org",
@@ -94,6 +97,9 @@ export function OrganizationJsonLd({
     url,
     description,
     sameAs: [] as string[],
+    ...(keywords?.length
+      ? { knowsAbout: keywords as unknown as string[] }
+      : {}),
   };
 
   return (

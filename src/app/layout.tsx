@@ -15,16 +15,17 @@ const dmSans = DM_Sans({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#d1fae5",
+  themeColor: "#002b1b",
 };
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
+    default: `${siteConfig.name} — Robinbet giriş & adres rehberi`,
     template: `%s — ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  keywords: [...siteConfig.seoKeywords],
   openGraph: {
     type: "website",
     locale: siteConfig.locale,
@@ -61,6 +62,7 @@ export default function RootLayout({
           name={siteConfig.name}
           url={siteConfig.url}
           description={siteConfig.description}
+          keywords={siteConfig.seoKeywords}
         />
         <SiteShell>{children}</SiteShell>
         <Analytics />

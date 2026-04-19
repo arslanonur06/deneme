@@ -8,11 +8,11 @@ import { siteConfig } from "@/lib/content/site";
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-emerald-200/70 bg-white/90 backdrop-blur-sm">
+    <footer className="mt-auto border-t border-forest-200/70 bg-white/90 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-        <div className="rounded-2xl border border-emerald-200 bg-emerald-50/90 p-4 sm:p-5">
-          <p className="text-sm font-semibold text-emerald-950">
-            {siteConfig.partner.name} (@{siteConfig.partner.telegramHandle}) — kanal
+        <div className="rounded-2xl border border-forest-200 bg-forest-50/90 p-4 sm:p-5">
+          <p className="text-sm font-semibold text-forest-950">
+            Robinbet — güncel iletişim ve hızlı erişim
           </p>
           <Suspense
             fallback={<RobinbetActionButtonsFallback className="mt-3" variant="default" />}
@@ -62,7 +62,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="mt-10 rounded-lg border border-amber-200/80 bg-amber-50/80 p-4 text-sm text-amber-950">
+        <div className="mt-10 rounded-lg border border-gold-200/80 bg-gold-50/80 p-4 text-sm text-forest-900">
           <strong className="font-semibold">Sorumlu oyun:</strong> Kontrolsüz
           kumar zararlı olabilir. Mevcutsa yatırım limitleri, gerçeklik
           kontrolleri ve kendini dışlama araçlarını kullanın. Desteğe ihtiyaç

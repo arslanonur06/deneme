@@ -104,9 +104,9 @@ export default async function BlogPostPage({ params }: PageProps) {
             ))}
           </div>
 
-          <aside className="mt-10 rounded-2xl border border-emerald-200/70 bg-emerald-50/40 p-5 text-sm text-emerald-950">
+          <aside className="mt-10 rounded-2xl border border-forest-200/70 bg-forest-50/40 p-5 text-sm text-forest-950">
             <p className="font-semibold">Telegram ve güncel duyurular</p>
-            <p className="mt-2 text-emerald-900/90">
+            <p className="mt-2 text-forest-900/90">
               Kampanyalar sık değişir. Güncel deneme veya hoş geldin koşulları
               için resmi sayfayı kontrol edin; karşılaştırma tablomuz genel
               notlar içindir.
@@ -118,7 +118,7 @@ export default async function BlogPostPage({ params }: PageProps) {
                     href={siteConfig.partner.affiliateUrl}
                     target="_blank"
                     rel="noopener noreferrer sponsored"
-                    className="inline-flex rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-900"
+                    className="inline-flex rounded-lg bg-gold-500 px-4 py-2 text-sm font-semibold text-forest-950 hover:bg-gold-400"
                   >
                     {siteConfig.partner.visitCta}
                   </a>
@@ -127,14 +127,14 @@ export default async function BlogPostPage({ params }: PageProps) {
                 <PartnerOutboundLink
                   target="_blank"
                   rel="noopener noreferrer sponsored"
-                  className="inline-flex rounded-lg bg-emerald-700 px-4 py-2 text-sm font-semibold text-white hover:bg-emerald-900"
+                  className="inline-flex rounded-lg bg-gold-500 px-4 py-2 text-sm font-semibold text-forest-950 hover:bg-gold-400"
                 >
                   {siteConfig.partner.visitCta}
                 </PartnerOutboundLink>
               </Suspense>
               <Link
                 href="/compare/platforms"
-                className="inline-flex items-center rounded-lg border border-amber-300 bg-white px-4 py-2 text-sm font-semibold text-emerald-950 hover:bg-emerald-50"
+                className="inline-flex items-center rounded-lg border border-gold-300 bg-white px-4 py-2 text-sm font-semibold text-forest-950 hover:bg-forest-50"
               >
                 Karşılaştırma tablosu
               </Link>
@@ -144,7 +144,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           <p className="mt-8 text-center">
             <Link
               href="/blog"
-              className="text-sm font-medium text-emerald-900 underline-offset-4 hover:underline"
+              className="text-sm font-medium text-forest-900 underline-offset-4 hover:underline"
             >
               ← Tüm blog yazıları
             </Link>

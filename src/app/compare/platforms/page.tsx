@@ -29,21 +29,21 @@ export const metadata: Metadata = {
 export default function ComparePlatformsPage() {
   return (
     <main>
-      <header className="border-b border-emerald-200/60 bg-white/90 backdrop-blur-sm">
+      <header className="border-b border-forest-200/60 bg-white/90 backdrop-blur-sm">
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
-          <p className="text-xs font-semibold uppercase tracking-wide text-emerald-700">
+          <p className="text-xs font-semibold uppercase tracking-wide text-forest-700">
             Karşılaştırma merkezi
           </p>
           <h1 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl">
             Platform karşılaştırma tablosu
           </h1>
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-zinc-600">
-            <strong className="font-medium text-foreground">Telegram (@kittyxeniaa)</strong>{" "}
+            <strong className="font-medium text-foreground">Robinbet Telegram</strong>{" "}
             öne çıkan iletişim kanalımızdır; mavi ana düğmeler bu adrese gider.
             Diğer satırlar tabloyu tamamlamak için örnektir (example.com); güncel
             bilgi için ilgili markanın resmi sitesine bakın.
           </p>
-          <div className="mt-6 max-w-3xl rounded-2xl border border-emerald-200 bg-emerald-50/90 p-4">
+          <div className="mt-6 max-w-3xl rounded-2xl border border-forest-200 bg-forest-50/90 p-4">
             <Suspense
               fallback={<RobinbetActionButtonsFallback variant="compact" />}
             >

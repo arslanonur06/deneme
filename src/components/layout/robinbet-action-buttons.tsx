@@ -26,23 +26,23 @@ function RobinbetActionButtonsInner({
 }: RobinbetActionButtonsProps & { href: string }) {
   const solid =
     variant === "compact"
-      ? "rounded-lg bg-emerald-700 px-2.5 py-1.5 text-xs font-semibold text-white shadow hover:bg-emerald-800"
+      ? "rounded-lg bg-gold-500 px-2.5 py-1.5 text-xs font-semibold text-forest-950 shadow hover:bg-gold-400"
       : variant === "hero"
-        ? "rounded-xl bg-emerald-700 px-4 py-2.5 text-sm font-semibold text-white shadow-md hover:bg-emerald-800 sm:px-5 sm:py-3"
-        : "rounded-lg bg-emerald-700 px-3 py-2 text-sm font-semibold text-white shadow hover:bg-emerald-800";
+        ? "rounded-xl bg-gold-500 px-4 py-2.5 text-sm font-semibold text-forest-950 shadow-md hover:bg-gold-400 sm:px-5 sm:py-3"
+        : "rounded-lg bg-gold-500 px-3 py-2 text-sm font-semibold text-forest-950 shadow hover:bg-gold-400";
 
   const outline =
     variant === "compact"
-      ? "rounded-lg border border-amber-500 bg-white/95 px-2.5 py-1.5 text-xs font-semibold text-emerald-900 hover:bg-amber-50/80"
+      ? "rounded-lg border border-gold-400 bg-white/95 px-2.5 py-1.5 text-xs font-semibold text-forest-900 hover:bg-gold-50/80"
       : variant === "hero"
-        ? "rounded-xl border-2 border-amber-500 bg-white/95 px-4 py-2.5 text-sm font-semibold text-emerald-900 hover:bg-amber-50/80 sm:px-5 sm:py-3"
-        : "rounded-lg border border-amber-500 bg-white/95 px-3 py-2 text-sm font-semibold text-emerald-900 hover:bg-amber-50/80";
+        ? "rounded-xl border-2 border-gold-400 bg-white/95 px-4 py-2.5 text-sm font-semibold text-forest-900 hover:bg-gold-50/80 sm:px-5 sm:py-3"
+        : "rounded-lg border border-gold-400 bg-white/95 px-3 py-2 text-sm font-semibold text-forest-900 hover:bg-gold-50/80";
 
   return (
     <div
       className={`flex flex-wrap items-center gap-2 ${className}`}
       role="group"
-      aria-label="Telegram (kittyxeniaa) dış bağlantıları"
+      aria-label="Robinbet Telegram dış bağlantıları"
     >
       {items.map((item, index) => (
         <a

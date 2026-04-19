@@ -16,17 +16,17 @@ function RecommendedPlatformsInner({
 }: RecommendedPlatformsProps & { partnerHref: string }) {
   return (
     <aside
-      className="my-10 rounded-2xl border border-blue-200/70 bg-blue-50/40 p-5 sm:p-6"
+      className="my-10 rounded-2xl border border-forest-200/70 bg-forest-50/40 p-5 sm:p-6"
       aria-label="Önerilen platformlar"
     >
-      <p className="text-sm font-semibold text-blue-950">
+      <p className="text-sm font-semibold text-forest-950">
         Okuyucuların sıradaki adımda karşılaştırdığı platformlar
       </p>
-      <p className="mt-1 text-sm text-blue-900/80">
+      <p className="mt-1 text-sm text-forest-900/80">
         Şeffaflık ve yayımlanan politikalarda güçlü seçenekler. Kayıt olmadan
         önce bölgenizdeki uygunluğu mutlaka doğrulayın.
       </p>
-      <ul className="mt-4 divide-y divide-blue-200/60 rounded-xl border border-blue-200/60 bg-white/80">
+      <ul className="mt-4 divide-y divide-forest-200/60 rounded-xl border border-forest-200/60 bg-white/80">
         {platforms.map((p) => (
           <li
             key={p.slug}
@@ -39,7 +39,7 @@ function RecommendedPlatformsInner({
             <div className="flex flex-wrap items-center gap-2">
               <Link
                 href="/compare/platforms"
-                className="text-sm font-medium text-blue-900 underline-offset-4 hover:underline"
+                className="text-sm font-medium text-forest-900 underline-offset-4 hover:underline"
               >
                 Tam karşılaştırmayı gör
               </Link>
@@ -51,7 +51,7 @@ function RecommendedPlatformsInner({
                     ? "noopener noreferrer sponsored"
                     : "noopener noreferrer nofollow"
                 }
-                className="inline-flex items-center justify-center rounded-lg bg-blue-700 px-3 py-2 text-sm font-semibold text-white transition-colors hover:bg-blue-900"
+                className="inline-flex items-center justify-center rounded-lg bg-gold-500 px-3 py-2 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-400"
               >
                 {p.ctaLabel}
               </a>

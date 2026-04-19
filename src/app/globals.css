@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ecfdf5;
+  --background: #eef8f1;
   --foreground: #0f172a;
 }
 
@@ -9,41 +9,60 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-dm-sans), ui-sans-serif, system-ui, sans-serif;
+
+  /* RobinBet: koyu orman yeşili + metalik altın (logo paleti) */
+  --color-forest-50: #eef8f1;
+  --color-forest-100: #d8ede0;
+  --color-forest-200: #b0d9c4;
+  --color-forest-300: #7abe96;
+  --color-forest-600: #1a5c3a;
+  --color-forest-700: #14532d;
+  --color-forest-800: #0f3924;
+  --color-forest-900: #002b1b;
+  --color-forest-950: #001208;
+
+  --color-gold-50: #fdfbf7;
+  --color-gold-100: #f5ecd6;
+  --color-gold-200: #e8d5a3;
+  --color-gold-300: #dcc585;
+  --color-gold-400: #c5a059;
+  --color-gold-500: #b89447;
+  --color-gold-600: #9a7d3d;
 }
 
-/* Yeşil + altın (emerald / amber) arka plan */
+/* Koyu yeşil zemin, altın parıltı (logo ile uyumlu) */
 body.sonic-bg {
   position: relative;
   min-height: 100%;
   color: var(--foreground);
-  background-color: #d1fae5;
+  background-color: #002b1b;
   background-image:
     radial-gradient(
-      ellipse 120% 80% at 50% -20%,
-      rgba(16, 185, 129, 0.32),
-      transparent 50%
+      ellipse 100% 70% at 50% -15%,
+      rgba(197, 160, 89, 0.22),
+      transparent 55%
     ),
     radial-gradient(
-      circle at 15% 25%,
-      rgba(245, 158, 11, 0.12) 0%,
+      circle at 12% 30%,
+      rgba(197, 160, 89, 0.08) 0%,
+      transparent 42%
+    ),
+    radial-gradient(
+      circle at 88% 65%,
+      rgba(16, 185, 129, 0.12) 0%,
       transparent 40%
     ),
     radial-gradient(
-      circle at 85% 70%,
-      rgba(5, 150, 105, 0.14) 0%,
-      transparent 38%
-    ),
-    radial-gradient(
       circle at 50% 100%,
-      rgba(16, 185, 129, 0.08) 0%,
-      transparent 45%
+      rgba(0, 43, 27, 0.9) 0%,
+      transparent 50%
     ),
     repeating-linear-gradient(
-      105deg,
+      108deg,
       transparent,
-      transparent 48px,
-      rgba(16, 185, 129, 0.04) 48px,
-      rgba(245, 158, 11, 0.035) 50px
+      transparent 52px,
+      rgba(197, 160, 89, 0.04) 52px,
+      rgba(197, 160, 89, 0.04) 54px
     );
   background-attachment: fixed;
 }
@@ -56,21 +75,14 @@ body.sonic-bg::before {
   z-index: 0;
   background:
     radial-gradient(
-      circle at 75% 10%,
-      rgba(251, 191, 36, 0.18),
-      transparent 24%
+      circle at 78% 8%,
+      rgba(197, 160, 89, 0.15),
+      transparent 20%
     ),
     radial-gradient(
-      circle at 20% 55%,
-      transparent 28%,
-      rgba(16, 185, 129, 0.06) 29%,
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 60% 40%,
-      transparent 32%,
-      rgba(245, 158, 11, 0.06) 33%,
-      transparent 34%
+      circle at 22% 58%,
+      transparent 30%,
+      rgba(0, 18, 8, 0.35) 70%
     );
 }
 

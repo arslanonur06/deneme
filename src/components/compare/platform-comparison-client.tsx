@@ -64,7 +64,7 @@ export function PlatformComparisonInner({
                 onClick={() => setSortKey(key)}
                 className={`rounded-full border px-3 py-1.5 text-sm font-medium transition-colors ${
                   sortKey === key
-                    ? "border-blue-700 bg-blue-700 text-white"
+                    ? "border-gold-500 bg-gold-500 text-forest-950"
                     : "border-zinc-200 bg-white text-zinc-700 hover:border-zinc-300"
                 }`}
               >
@@ -148,7 +148,7 @@ export function PlatformComparisonInner({
                     }
                     className={
                       p.isPartnerAffiliate
-                        ? "inline-flex min-w-[120px] items-center justify-center rounded-lg bg-blue-700 px-3 py-2 text-xs font-semibold text-white transition-colors hover:bg-blue-900 sm:text-sm"
+                        ? "inline-flex min-w-[120px] items-center justify-center rounded-lg bg-gold-500 px-3 py-2 text-xs font-semibold text-forest-950 transition-colors hover:bg-gold-400 sm:text-sm"
                         : "inline-flex min-w-[120px] items-center justify-center rounded-lg border border-zinc-200 bg-zinc-50 px-3 py-2 text-xs font-semibold text-zinc-600 transition-colors hover:bg-zinc-100 sm:text-sm"
                     }
                   >
